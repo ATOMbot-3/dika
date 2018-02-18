@@ -10,11 +10,11 @@ from googletrans import Translator
 from gtts import gTTS
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
-nadya = LINETCR.LINE()
-#nadya.login(qr=True)
-nadya.login(token='EpS0tmC0ZTDhKOGiKDmb.fpzoe5O4f6/QVIFsn6/ZAW.l+ZRTs/GX3nkrHE/Y77Huo1aF65/TOARxV8ppihfEOQ=')
-nadya.loginResult()
-print "Nadya-Login Success\n\n=====[Sukses Login]====="
+dika = LINETCR.LINE()
+#dika.login(qr=True)
+dika.login(token='EpyRZtRJCW5OUyjsuQ0e.zeqd5ewin+YLfK0SWQQnpG.fRdM3x0CQHaqefVn5xuk0T+jonP/KAYT2SRtqiW0dSQ=')
+dika.loginResult()
+print "Dika-Login Success\n\n=====[Sukses Login]====="
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -49,8 +49,8 @@ selfMessage ="""
 ╠➩〘Micdel @〙
 ╠➩〘Miclist〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             💠 By : Dika 💠
+║    〽️ line.me/ti/p/~dika_1510 〽️
 ╚═════════════════════════
 """
 
@@ -69,8 +69,8 @@ botMessage ="""
 ╠➩〘@bye〙
 ╠➩〘Bot on/off〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             💠 By : Dika 💠
+║    〽️ line.me/ti/p/~dika_1510 〽️
 ╚═════════════════════════
 """
 
@@ -111,7 +111,7 @@ mediaMessage ="""
 ╠➩〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
 ║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║    〽️ line.me/ti/p/~dika_1510 〽️
 ╚═════════════════════════
 """
 
@@ -143,11 +143,11 @@ groupMessage ="""
 ╠➩〘Getgroup image〙
 ╠➩〘Urlgroup Image〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             💠 By : Dika 💠
+║    〽️ line.me/ti/p/~dika_1510 〽️
 ╚═════════════════════════
 """
-tjia="u14f64e139a3817afaabe27d237afb36b"
+dika="u644403e4458837fca5164d2cc2aa8d3e "
 
 setMessage ="""
 ╔═════════════════════════
@@ -162,8 +162,8 @@ setMessage ="""
 ╠➩〘Sticker on〙
 ╠➩〘Simisimi on/off〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             💠 By : dika 💠
+║    〽️ line.me/ti/p/~1510 〽️
 ╚═════════════════════════
 """
 
@@ -181,8 +181,8 @@ creatorMessage ="""
 ╠➩〘Bot restart〙
 ╠➩〘Turn off〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             💠 By : Dika 💠
+║    〽️ line.me/ti/p/~dika_1510 〽️
 ╚═════════════════════════
 """
 
@@ -222,8 +222,8 @@ adminMessage ="""
 ╠➩〘Respon3 on/off〙
 ╠➩〘Responkick on/off〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             💠 By : Dika 💠
+║    〽️ line.me/ti/p/~dika_1510 〽️
 ╚═════════════════════════
 """
 
@@ -244,20 +244,20 @@ helpMessage ="""
 ╠➩〘Speed test〙
 ╠➩〘Status〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             💠 By : Dika 💠
+║    〽️ line.me/ti/p/~dik_1510 〽️
 ╚═════════════════════════
 """
 
 
-KAC=[nadya]
-mid = nadya.getProfile().mid
+KAC=[dika]
+mid = dika.getProfile().mid
 Bots=[mid]
-Creator=["u14f64e139a3817afaabe27d237afb36b"]
-admin=["u14f64e139a3817afaabe27d237afb36b"]
+Creator=["u644403e4458837fca5164d2cc2aa8d3e"]
+admin=["u644403e4458837fca5164d2cc2aa8d3e"]
 
-contact = nadya.getProfile()
-backup1 = nadya.getProfile()
+contact = dika.getProfile()
+backup1 = dika.getProfile()
 backup1.displayName = contact.displayName
 backup1.statusMessage = contact.statusMessage                        
 backup1.pictureStatus = contact.pictureStatus
@@ -284,10 +284,10 @@ wait = {
     'detectMention2':True,
     'detectMention3':False,
     'kickMention':False,  
-    'sticker':False,  
+    'sticker':True,  
     'timeline':True,
     "Timeline":True,
-    "comment":"Bot Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~nad_nad.",    
+    "comment":"Bot Auto Like ©By : Dika\nContact Me : 👉 line.me/ti/p/~dika_1510",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
@@ -526,9 +526,9 @@ def summon(to, nama):
     msg.to = to
     msg.text = "\xe2\x95\x94\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\n"+bb+"\xe2\x95\x9a\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90"
     msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+aa+']}','EMTVER':'4'}
-    print "[Command] Tag All"
+    print "[Command] Nina"
     try:
-       nadya.sendMessage(msg)
+       dika.sendMessage(msg)
     except Exception as error:
        print error          
                         
@@ -551,7 +551,7 @@ def bot(op):
               if(wait["message"]in[""," ","\n",None]):
                 pass
               else:
-                nadya.sendText(op.param1,str(wait["message"]))
+                dika.sendText(op.param1,str(wait["message"]))
 
 
         if op.type == 55:
@@ -566,24 +566,24 @@ def bot(op):
                 try:
                     if cctv['cyduk'][op.param1]==True:
                         if op.param1 in cctv['point']:
-                            Name = nadya.getContact(op.param2).displayName
+                            Name = dika.getContact(op.param2).displayName
 #                            Name = summon(op.param2)
-                            if Name in cctv['sidermem'][op.param1]:
+                            if Name in cctv['fanz nya nina'][op.param1]:
                                 pass
                             else:
-                                cctv['sidermem'][op.param1] += "\n• " + Name
+                                cctv['fanz nya nina'][op.param1] += "\n• " + Name
                                 if " " in Name:
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
-                                        nadya.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgintip Aja Niih. . .\nChat Kek Idiih (-__-)   ")
+                                        dika.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgintip Aja Niih. . .\nChat Kek Idiih (-__-)   ")
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                     else:
-                                        nadya.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nBetah Banget Jadi Penonton. . .\nChat Napa (-__-)   ")
+                                        dika.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nBetah Banget Jadi Penonton. . .\nChat Napa (-__-)   ")
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                 else:
-                                    nadya.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgapain Kak Ngintip Aja???\nSini Gabung Chat...   ")
+                                    dika.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgapain Kak Ngintip Aja???\nSini Gabung Chat...   ")
                                     time.sleep(0.2)
                                     summon(op.param1,[op.param2])
                         else:
@@ -598,49 +598,49 @@ def bot(op):
 	      
 
         if op.type == 22:
-            nadya.leaveRoom(op.param1)
+            dika.leaveRoom(op.param1)
 
         if op.type == 21:
-            nadya.leaveRoom(op.param1)
+            dika.leaveRoom(op.param1)
 
 
         if op.type == 13:
 	    print op.param3
             if op.param3 in mid:
 		if op.param2 in Creator:
-		    nadya.acceptGroupInvitation(op.param1)
+		    dika.acceptGroupInvitation(op.param1)
 
 		    
 	    if mid in op.param3:	        
                 if wait["AutoJoinCancel"] == True:
 		    G = nadya.getGroup(op.param1)
                     if len(G.members) <= wait["memberscancel"]:
-                        nadya.acceptGroupInvitation(op.param1)
-                        nadya.sendText(op.param1,"Maaf " + nadya.getContact(op.param2).displayName + "\nMember Kurang Dari 30 Orang\nUntuk Info, Silahkan Chat Owner Kami!")
-                        nadya.leaveGroup(op.param1)                        
+                        dika.acceptGroupInvitation(op.param1)
+                        dika.sendText(op.param1,"Maaf " + dika.getContact(op.param2).displayName + "\nMember Kurang Dari 30 Orang\nUntuk Info, Silahkan Chat Owner Kami!")
+                        dika.leaveGroup(op.param1)                        
 		    else:
-                        nadya.acceptGroupInvitation(op.param1)
-			nadya.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
+                        dika.acceptGroupInvitation(op.param1)
+                        dika.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
                         		    
  
 	    if mid in op.param3:
                 if wait["AutoJoin"] == True:
-		    G = nadya.getGroup(op.param1)
+		    G = dika.getGroup(op.param1)
                     if len(G.members) <= wait["Members"]:
-                        nadya.rejectGroupInvitation(op.param1)
+                        dika.rejectGroupInvitation(op.param1)
 		    else:
-                        nadya.acceptGroupInvitation(op.param1)
-			nadya.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
+                        dika.acceptGroupInvitation(op.param1)
+                        dika.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
 	    else:
                 if wait["AutoCancel"] == True:
 		    if op.param3 in Bots:
 			pass
 		    else:
-                        nadya.cancelGroupInvitation(op.param1, [op.param3])
+                        dika.cancelGroupInvitation(op.param1, [op.param3])
 		else:
-		    if op.param3 in wait["blacklist"]:
-			nadya.cancelGroupInvitation(op.param1, [op.param3])
-			nadya.sendText(op.param1, "Blacklist Detected")
+		    if op.param3 in wait["blacklist"]:                                            
+			dika.cancelGroupInvitation(op.param1, [op.param3])
+                        dika.sendText(op.param1, "Blacklist Detected")
 		    else:
 			pass
 			
@@ -654,8 +654,8 @@ def bot(op):
                     pass
                 elif wait["inviteprotect"] == True:
                     wait ["blacklist"][op.param2] = True
-                    nadya.cancelGroupInvitation(op.param1,[op.param3])
-                    nadya.kickoutFromGroup(op.param1,[op.param2])
+                    dika.cancelGroupInvitation(op.param1,[op.param3])
+                    dika.kickoutFromGroup(op.param1,[op.param2])
                     if op.param2 not in Creator:
                      if op.param2 not in admin:
                       if op.param2 not in Bots:
@@ -676,21 +676,21 @@ def bot(op):
 		           if op.param2 in Bots:
 		               pass
 		           else:
-		               nadya.kickoutFromGroup(op.param1,[op.param2])
+		               dika.kickoutFromGroup(op.param1,[op.param2])
 		               if op.param2 in wait["blacklist"]:
 		                   pass
 		        else:
-			    nadya.inviteIntoGroup(op.param1,[op.param3])
+			    dika.inviteIntoGroup(op.param1,[op.param3])
 		    except:
 		        try:
 			    if op.param2 not in Creator:
 			        if op.param2 not in admin:
 			            if op.param2 not in Bots:
-                                        nadya.kickoutFromGroup(op.param1,[op.param2])
+                                        dika.kickoutFromGroup(op.param1,[op.param2])
 			    if op.param2 in wait["blacklist"]:
 			        pass
 			    else:
-			        nadya.inviteIntoGroup(op.param1,[op.param3])
+			        dika.inviteIntoGroup(op.param1,[op.param3])
 		        except:
 			    print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
                         if op.param2 in wait["blacklist"]:
@@ -720,11 +720,11 @@ def bot(op):
                       if op.param2 in Bots:
                         pass
                     try:
-                        nadya.kickoutFromGroup(op.param1,[op.param2])
-			nadya.kickoutFromGroup(op.param1,[op.param2])
+                        dika.kickoutFromGroup(op.param1,[op.param2])
+			dika.kickoutFromGroup(op.param1,[op.param2])
                     except:
                         try:
-			    nadya.kickoutFromGroup(op.param1,[op.param2])
+			    dika.kickoutFromGroup(op.param1,[op.param2])
                         except:
                             print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
                         if op.param2 in wait["blacklist"]:
@@ -746,16 +746,16 @@ def bot(op):
                     if op.param2 in Bots:
                         pass
                     try:
-                        nadya.kickoutFromGroup(op.param1,[op.param2])
-			nadya.kickoutFromGroup(op.param1,[op.param2])
+                        dika.kickoutFromGroup(op.param1,[op.param2])
+			dika.kickoutFromGroup(op.param1,[op.param2])
                     except:
                         try:
 			    if op.param2 not in Bots:
-                                nadya.kickoutFromGroup(op.param1,[op.param2])
+                                dika.kickoutFromGroup(op.param1,[op.param2])
 			    if op.param2 in wait["blacklist"]:
 			        pass
 			    else:
-			        nadya.inviteIntoGroup(op.param1,[op.param3])
+			        dika.inviteIntoGroup(op.param1,[op.param3])
                         except:
                             print ("client Kick regulation or Because it does not exist in the group\ngid=["+op.param1+"]\nmid=["+op.param2+"]")
                         if op.param2 in wait["blacklist"]:
@@ -789,33 +789,33 @@ def bot(op):
           if wait["Sambutan"] == True:
             if op.param2 in Creator:
                 return
-            ginfo = nadya.getGroup(op.param1)
-            contact = nadya.getContact(op.param2)
+            ginfo = dika.getGroup(op.param1)
+            contact = dika.getContact(op.param2)
             image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-            nadya.sendText(op.param1,"Hallo " + nadya.getContact(op.param2).displayName + "\nWelcome To ☞ " + str(ginfo.name) + " ☜" + "\nBudayakan Cek Note\nDan Semoga Betah Disini ^_^")
+            dika.sendText(op.param1,"Hallo " + dika.getContact(op.param2).displayName + "\nWelcome To ☞ " + str(ginfo.name) + " ☜" + "\nBudayakan Cek Note\nDan Semoga Betah Disini ^_^")
             c = Message(to=op.param1, from_=None, text=None, contentType=13)
             c.contentMetadata={'mid':op.param2}
-            nadya.sendMessage(c)  
-            nadya.sendImageWithURL(op.param1,image)
+            dika.sendMessage(c)  
+            dika.sendImageWithURL(op.param1,image)
             d = Message(to=op.param1, from_=None, text=None, contentType=7)
             d.contentMetadata={
                                     "STKID": "13269548",
                                     "STKPKGID": "1329191",
                                     "STKVER": "1" }                
-            nadya.sendMessage(d)             
+            dika.sendMessage(d)             
             print "MEMBER JOIN TO GROUP"
 
         if op.type == 15:
           if wait["Sambutan"] == True:
             if op.param2 in Creator:
                 return
-            nadya.sendText(op.param1,"Good Bye " + nadya.getContact(op.param2).displayName +  "\nSee You Next Time . . . (p′︵‵。) 🤗")
+            dika.sendText(op.param1,"Good Bye " + dika.getContact(op.param2).displayName +  "\nSee You Next Time . . . (p′︵‵。) 🤗")
             d = Message(to=op.param1, from_=None, text=None, contentType=7)
             d.contentMetadata={
                                     "STKID": "13269542",
                                     "STKPKGID": "1329191",
                                     "STKVER": "1" }                
-            nadya.sendMessage(d)                  
+            dika.sendMessage(d)                  
             print "MEMBER HAS LEFT THE GROUP"
             
         if op.type == 26:
@@ -836,7 +836,7 @@ def bot(op):
                         data = json.loads(data)
                         if data['status'] == 200:
                             if data['result']['result'] == 100:
-                                nadya.sendText(msg.to,data['result']['response'].encode('utf-8'))
+                                dika.sendText(msg.to,data['result']['response'].encode('utf-8'))
 
             if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["kickMention"] == True:
@@ -849,7 +849,7 @@ def bot(op):
                      mentionees = mention['MENTIONEES']
                      for mention in mentionees:
                            if mention['M'] in Bots:
-                                  nadya.sendText(msg.to,ret_)
+                                  dika.sendText(msg.to,ret_)
                                   nadya.kickoutFromGroup(msg.to,[msg.from_])
                                   break                              
                               
@@ -864,35 +864,35 @@ def bot(op):
                      mentionees = mention['MENTIONEES']
                      for mention in mentionees:
                            if mention['M'] in Bots:
-                                  nadya.sendText(msg.to,ret_)
+                                  dika.sendText(msg.to,ret_)
                                   break   
                               
             if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["detectMention2"] == True:          
-                    contact = nadya.getContact(msg.from_)
+                    contact = dika.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Sekali lagi nge tag gw sumpahin jomblo seumur hidup!","Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                    balas = ["Sekali lagi nge tag gw sumpahin jomblo seumur hidup!","Nggak Usah Tag-Tag! Kalo Penting Langsung Vc Aja","Yaellahh " + cName + " Jangan Ngetag, Riibut!"]
                     ret_ = random.choice(balas)
                     name = re.findall(r'@(\w+)', msg.text)
                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
                     mentionees = mention['MENTIONEES']
                     for mention in mentionees:
                            if mention['M'] in Bots:
-                                  nadya.sendText(msg.to,ret_)
+                                  dika.sendText(msg.to,ret_)
                                   msg.contentType = 7   
                                   msg.text = None
                                   msg.contentMetadata = {
                                                        "STKID": "20001316",
                                                        "STKPKGID": "1582380",
                                                        "STKVER": "1" }
-                                  nadya.sendMessage(msg)                                
+                                  dika.sendMessage(msg)                                
                                   break
                               
             if 'MENTION' in msg.contentMetadata.keys() != None:
                  if wait["detectMention3"] == True:          
-                    contact = nadya.getContact(msg.from_)
+                    contact = dika.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Woii " + cName + ", Dasar Jones Ngetag Mulu!"]
+                    balas = ["Woii " + cName + ", Dasar Jones Zaman Now Ngetag Mulu!"]
                     balas1 = "Ini Foto Sii Jones Yang Suka Ngetag. . ."
                     ret_ = random.choice(balas)
                     image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
@@ -901,16 +901,16 @@ def bot(op):
                     mentionees = mention['MENTIONEES']
                     for mention in mentionees:
                            if mention['M'] in Bots:
-                                  nadya.sendText(msg.to,ret_)
-                                  nadya.sendText(msg.to,balas1)
-                                  nadya.sendImageWithURL(msg.to,image)
+                                  dika.sendText(msg.to,ret_)
+                                  dika.sendText(msg.to,balas1)
+                                  dika.sendImageWithURL(msg.to,image)
                                   msg.contentType = 7   
                                   msg.text = None
                                   msg.contentMetadata = {
                                                        "STKID": "11764508",
                                                        "STKPKGID": "6641",
                                                        "STKVER": "1" }
-                                  nadya.sendMessage(msg)                                
+                                  dika.sendMessage(msg)                                
                                   break  
                                   
         if op.type == 25:
@@ -918,7 +918,7 @@ def bot(op):
                               
             if msg.text in ["Bot on"]:
                 wait["Bot"] = True
-                nadya.sendText(msg.to,"Bot Sudah On Kembali.")  
+                dika.sendText(msg.to,"Bot Sudah On Kembali.")  
 
         if op.type == 25:
           if wait["Bot"] == True:    
@@ -932,24 +932,24 @@ def bot(op):
                 stk_ver = msg.contentMetadata['STKVER']
                 pkg_id = msg.contentMetadata['STKPKGID']
                 filler = "『 Sticker Check 』\nSTKID : %s\nSTKPKGID : %s\nSTKVER : %s\n『 Link 』\nline://shop/detail/%s" % (stk_id,pkg_id,stk_ver,pkg_id)
-                nadya.sendText(msg.to, filler)
+                dika.sendText(msg.to, filler)
                 wait["sticker"] = False
             else:
                 pass              
 
             if wait["alwaysRead"] == True:
                 if msg.toType == 0:
-                    nadya.sendChatChecked(msg.from_,msg.id)
+                    dika.sendChatChecked(msg.from_,msg.id)
                 else:
-                    nadya.sendChatChecked(msg.to,msg.id)
+                    dika.sendChatChecked(msg.to,msg.id)
                     
                     
             if msg.contentType == 16:
                 if wait['likeOn'] == True:
                      url = msg.contentMetadata["postEndUrl"]
-                     nadya.like(url[25:58], url[66:], likeType=1005)
-                     nadya.comment(url[25:58], url[66:], wait["comment"])
-                     nadya.sendText(msg.to,"Like Success")                     
+                     dika.like(url[25:58], url[66:], likeType=1005)
+                     dika.comment(url[25:58], url[66:], wait["comment"])
+                     dika.sendText(msg.to,"Like Success")                     
                      wait['likeOn'] = False
 
 
@@ -957,55 +957,54 @@ def bot(op):
                 if wait["wblacklist"] == True:
 		    if msg.contentMetadata["mid"] not in admin:
                         if msg.contentMetadata["mid"] in wait["blacklist"]:
-                            nadya.sendText(msg.to,"Sudah")
+                            dika.sendText(msg.to,"Sudah")
                             wait["wblacklist"] = False
                         else:
                             wait["blacklist"][msg.contentMetadata["mid"]] = True
                             wait["wblacklist"] = False
-                            nadya.sendText(msg.to,"Ditambahkan")
+                            dika.sendText(msg.to,"Ditambahkan")
 		    else:
-			nadya.sendText(msg.to,"Admin Detected~")
+			dika.sendText(msg.to,"Admin Detected~")
 			
 
                 elif wait["dblacklist"] == True:
                     if msg.contentMetadata["mid"] in wait["blacklist"]:
                         del wait["blacklist"][msg.contentMetadata["mid"]]
-                        nadya.sendText(msg.to,"Terhapus")
+                        dika.sendText(msg.to,"Terhapus")
                         wait["dblacklist"] = False
 
                     else:
                         wait["dblacklist"] = False
-                        nadya.sendText(msg.to,"Tidak Ada Black List")
+                        dika.sendText(msg.to,"Tidak Ada Black List")
             
                     
  
                 elif wait["Contact"] == True:
                      msg.contentType = 0
-                     nadya.sendText(msg.to,msg.contentMetadata["mid"])
+                     dika.sendText(msg.to,msg.contentMetadata["mid"])
                      if 'displayName' in msg.contentMetadata:
                          contact = nadya.getContact(msg.contentMetadata["mid"])
                          try:
-                             cu = nadya.channel.getCover(msg.contentMetadata["mid"])
+                             cu = dika.channel.getCover(msg.contentMetadata["mid"])
                          except:
                              cu = ""
-                         nadya.sendText(msg.to,"Nama:\n" + msg.contentMetadata["displayName"] + "\n\nMid:\n" + msg.contentMetadata["mid"] + "\n\nStatus:\n" + contact.statusMessage + "\n\nPhoto Profile:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nPhoto Cover:\n" + str(cu))
+                         dika.sendText(msg.to,"Nama:\n" + msg.contentMetadata["displayName"] + "\n\nMid:\n" + msg.contentMetadata["mid"] + "\n\nStatus:\n" + contact.statusMessage + "\n\nPhoto Profile:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nPhoto Cover:\n" + str(cu))
                      else:
-                         contact = nadya.getContact(msg.contentMetadata["mid"])
+                         contact = dika.getContact(msg.contentMetadata["mid"])
                          try:
-                             cu = nadya.channel.getCover(msg.contentMetadata["mid"])
+                             cu = dika.channel.getCover(msg.contentMetadata["mid"])
                          except:
                              cu = ""
-                         nadya.sendText(msg.to,"Nama:\n" + msg.contentMetadata["displayName"] + "\n\nMid:\n" + msg.contentMetadata["mid"] + "\n\nStatus:\n" + contact.statusMessage + "\n\nPhoto Profile:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nPhoto Cover:\n" + str(cu))
+                         dika.sendText(msg.to,"Nama:\n" + msg.contentMetadata["displayName"] + "\n\nMid:\n" + msg.contentMetadata["mid"] + "\n\nStatus:\n" + contact.statusMessage + "\n\nPhoto Profile:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n\nPhoto Cover:\n" + str(cu))
 
 
  
             elif msg.text == "Ginfo":
                 if msg.toType == 2:
-                    ginfo = nadya.getGroup(msg.to)
+                    ginfo = dika.getGroup(msg.to)
                     try:
                         gCreator = ginfo.creator.displayName
                     except:
-                        gCreator = "Error"
                     if wait["lang"] == "JP":
                         if ginfo.invitee is None:
                             sinvitee = "0"
@@ -1015,14 +1014,14 @@ def bot(op):
                             u = "close"
                         else:
                             u = "open"
-                        nadya.sendText(msg.to,"[Group name]\n" + str(ginfo.name) + "\n\n[Gid]\n" + msg.to + "\n\n[Group creator]\n" + gCreator + "\n\n[Profile status]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nMembers:" + str(len(ginfo.members)) + "members\nPending:" + sinvitee + "people\nURL:" + u + "it is inside")
+                        dika.sendText(msg.to,"[Group name]\n" + str(ginfo.name) + "\n\n[Gid]\n" + msg.to + "\n\n[Group creator]\n" + gCreator + "\n\n[Profile status]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nMembers:" + str(len(ginfo.members)) + "members\nPending:" + sinvitee + "people\nURL:" + u + "it is inside")
                     else:
-                        nadya.sendText(msg.to,"[group name]\n" + str(ginfo.name) + "\n[gid]\n" + msg.to + "\n[group creator]\n" + gCreator + "\n[profile status]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus)
+                        dika.sendText(msg.to,"[group name]\n" + str(ginfo.name) + "\n[gid]\n" + msg.to + "\n[group creator]\n" + gCreator + "\n[profile status]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus)
                 else:
                     if wait["lang"] == "JP":
-                        nadya.sendText(msg.to,"Can not be used outside the group")
+                        dika.sendText(msg.to,"Can not be used outside the group")
                     else:
-                        nadya.sendText(msg.to,"Not for use less than group")
+                        dika.sendText(msg.to,"Not for use less than group")
                         
 
  
@@ -1031,9 +1030,9 @@ def bot(op):
  
             elif msg.text in ["Creator","Owner"]:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': tjia}
-                nadya.sendMessage(msg)
-		nadya.sendText(msg.to,"Itu Majikan Kami (^_^)")
+                msg.contentMetadata = {'mid': Dika}
+                dika.sendMessage(msg)dika
+		.sendText(msg.to,"Itu Majikan Kami (^_^)")
 
  
 
@@ -1042,8 +1041,7 @@ def bot(op):
 		gCreator = ginfo.creator.mid
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': gCreator}
-                nadya.sendMessage(msg)
-		nadya.sendText(msg.to,"Itu Yang Buat Grup Ini")
+                dika.sendMessage(msg).sendText(msg.to,"Itu Yang Buat Grup Ini")
  
 
                 
@@ -1051,14 +1049,13 @@ def bot(op):
                 if wait["Timeline"] == True:
                     msg.contentType = 0
                     msg.text = "post URL\n" + msg.contentMetadata["postEndUrl"]
-                    nadya.sendText(msg.to,msg.text)
-
+                    diriku
             
             if msg.contentType == 13:
                 if wait["steal"] == True:
                     _name = msg.contentMetadata["displayName"]
                     copy = msg.contentMetadata["mid"]
-                    groups = nadya.getGroup(msg.to)
+                    groups = dika.getGroup(msg.to)
                     pending = groups.invitee
                     targets = []
                     for s in groups.members:
@@ -1072,15 +1069,15 @@ def bot(op):
                     else:
                         for target in targets:
                             try:
-                                nadya.findAndAddContactsByMid(target)
-                                contact = nadya.getContact(target)
-                                cu = nadya.channel.getCover(target)
+                                dika.findAndAddContactsByMid(target)
+                                contact = dika.getContact(target)
+                                cu = dika.channel.getCover(target)
                                 path = str(cu)
                                 image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-                                nadya.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + msg.contentMetadata["mid"] + "\n\nBio :\n" + contact.statusMessage)
-                                nadya.sendText(msg.to,"Profile Picture " + contact.displayName)
-                                nadya.sendImageWithURL(msg.to,image)
-                                nadya.sendText(msg.to,"Cover " + contact.displayName)
+                                dika.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + msg.contentMetadata["mid"] + "\n\nBio :\n" + contact.statusMessage)
+                                dika.sendText(msg.to,"Profile Picture " + contact.displayName)
+                                dika.sendImageWithURL(msg.to,image)
+                                dika.sendText(msg.to,"Cover " + contact.displayName)
                                 nadya.sendImageWithURL(msg.to,path)
                                 wait["steal"] = False
                                 break
@@ -1092,7 +1089,7 @@ def bot(op):
                 if wait["gift"] == True:
                     _name = msg.contentMetadata["displayName"]
                     copy = msg.contentMetadata["mid"]
-                    groups = nadya.getGroup(msg.to)
+                    groups = dika.getGroup(msg.to)
                     pending = groups.invitee
                     targets = []
                     for s in groups.members:
@@ -1106,7 +1103,7 @@ def bot(op):
                     else:
                         for target in targets:
                             try:
-                                nadya.sendText(msg.to,"Gift Sudah Terkirim!")
+                                dika.sendText(msg.to,"Gift Sudah Terkirim!")
                                 msg.contentType = 9
                                 msg.contentMetadata= {'PRDTYPE': 'STICKER',
                                                          'STKVER': '1',
@@ -1126,7 +1123,7 @@ def bot(op):
                 if wait["copy"] == True:
                     _name = msg.contentMetadata["displayName"]
                     copy = msg.contentMetadata["mid"]
-                    groups = nadya.getGroup(msg.to)
+                    groups = dika.getGroup(msg.to)
                     targets = []
                     for s in groups.members:
                         if _name in s.displayName:
@@ -1135,13 +1132,13 @@ def bot(op):
                         else:
                             targets.append(copy)
                     if targets == []:
-                        nadya.sendText(msg.to, "Not Found...")
+                        dika.sendText(msg.to, "Not Found...")
                         pass
                     else:
                         for target in targets:
                             try:
-                                nadya.CloneContactProfile(target)
-                                nadya.sendText(msg.to, "Copied (^_^)")
+                                dika.CloneContactProfile(target)
+                                dika.sendText(msg.to, "Copied (^_^)")
                                 wait['copy'] = False
                                 break
                             except:
@@ -1159,7 +1156,7 @@ def bot(op):
                      targets = []
                      for s in groups.members:
                          if _name in s.displayName:
-                             nadya.sendText(msg.to, _name + " Berada DiGrup Ini")
+                             dika.sendText(msg.to, _name + " Berada DiGrup Ini")
                          else:
                              targets.append(invite)
                      if targets == []:
@@ -1167,9 +1164,9 @@ def bot(op):
                      else:
                          for target in targets:
                              try:
-                                 nadya.findAndAddContactsByMid(target)
-                                 nadya.inviteIntoGroup(msg.to,[target])
-                                 nadya.sendText(msg.to,"Invite " + _name)
+                                 dika.findAndAddContactsByMid(target)
+                                 dika.inviteIntoGroup(msg.to,[target])
+                                 dika.sendText(msg.to,"Invite " + _name)
                                  wait['invite'] = False
                                  break                              
                              except:             
@@ -1179,192 +1176,192 @@ def bot(op):
                                   
  
             elif msg.text in ["Key creator","help creator","Help creator"]:
-                nadya.sendText(msg.to,creatorMessage)
+                dika.sendText(msg.to,creatorMessage)
 
             elif msg.text in ["Key group","help group","Help group"]:
-                nadya.sendText(msg.to,groupMessage)
+                dika.sendText(msg.to,groupMessage)
 
             elif msg.text in ["Key","help","Help"]:
-                nadya.sendText(msg.to,helpMessage)
+                dika.sendText(msg.to,helpMessage)
 
             elif msg.text in ["Key self","help self","Help self"]:
-                nadya.sendText(msg.to,selfMessage)
+                dika.sendText(msg.to,selfMessage)
 
             elif msg.text in ["Key bot","help bot","Help bot"]:
-                nadya.sendText(msg.to,botMessage)
+                dika.sendText(msg.to,botMessage)
 
             elif msg.text in ["Key set","help set","Help set"]:
-                nadya.sendText(msg.to,setMessage)
+                dika.sendText(msg.to,setMessage)
 
             elif msg.text in ["Key media","help media","Help media"]:
-                nadya.sendText(msg.to,mediaMessage)
+                dika.sendText(msg.to,mediaMessage)
                 
             elif msg.text in ["Key admin","help admin","Help admin"]:
-                nadya.sendText(msg.to,adminMessage)               
+                dika.sendText(msg.to,adminMessage)               
                 
 
  
             elif msg.text in ["List group"]:
-                    gid = nadya.getGroupIdsJoined()
+                    gid = dika.getGroupIdsJoined()
                     h = ""
 		    jml = 0
                     for i in gid:
 		        gn = nadya.getGroup(i).name
                         h += "♦【%s】\n" % (gn)
 		        jml += 1
-                    nadya.sendText(msg.to,"=======[List Group]=======\n"+ h +"\nTotal Group: "+str(jml))
+                    dika.sendText(msg.to,"=======[List Group]=======\n"+ h +"\nTotal Group: "+str(jml))
  
 	    elif "Ban group: " in msg.text:
 		grp = msg.text.replace("Ban group: ","")
-		gid = nadya.getGroupIdsJoined()
+		gid = dika.getGroupIdsJoined()
 		if msg.from_ in admin:
 		    for i in gid:
-		        h = nadya.getGroup(i).name
+		        h = dika.getGroup(i).name
 			if h == grp:
 			    wait["BlGroup"][i]=True
-			    nadya.sendText(msg.to, "Success Ban Group : "+grp)
+			    dika.sendText(msg.to, "Success Ban Group : "+grp)
 			else:
 			    pass
 		else:
-		    nadya.sendText(msg.to, "Khusus Nadya")
+		    dika.sendText(msg.to, "Khusus Dika")
  
             elif msg.text in ["List ban","List ban group"]:
 		if msg.from_ in admin:
                     if wait["BlGroup"] == {}:
-                        nadya.sendText(msg.to,"Tidak Ada")
+                        dika.sendText(msg.to,"Tidak Ada")
                     else:
                         mc = ""
                         for gid in wait["BlGroup"]:
-                            mc += "-> " +nadya.getGroup(gid).name + "\n"
-                        nadya.sendText(msg.to,"===[Ban Group]===\n"+mc)
+                            mc += "-> " +dika.getGroup(gid).name + "\n"
+                        dika.sendText(msg.to,"===[Ban Group]===\n"+mc)
 		else:
-		    nadya.sendText(msg.to, "Khusus Admin")
+		    dika.sendText(msg.to, "Khusus Admin")
  
 	    elif msg.text in ["Del ban: "]:
 		if msg.from_ in admin:
 		    ng = msg.text.replace("Del ban: ","")
 		    for gid in wait["BlGroup"]:
-		        if nadya.getGroup(gid).name == ng:
+		        if dika.getGroup(gid).name == ng:
 			    del wait["BlGroup"][gid]
-			    nadya.sendText(msg.to, "Success del ban "+ng)
+			    dika.sendText(msg.to, "Success del ban "+ng)
 		        else:
 			    pass
 		else:
-		    nadya.sendText(msg.to, "Khusus Nadya")
+		    dika.sendText(msg.to, "Khusus Nadya")
  
             elif "Join group: " in msg.text:
 		ng = msg.text.replace("Join group: ","")
-		gid = nadya.getGroupIdsJoined()
+		gid = dika.getGroupIdsJoined()
 		try:
 		    if msg.from_ in Creator:
                         for i in gid:
-                            h = nadya.getGroup(i).name
+                            h = dika.getGroup(i).name
 		            if h == ng:
-		                nadya.inviteIntoGroup(i,[Creator])
-			        nadya.sendText(msg.to,"Success Join To ["+ h +"] Group")
+		                dika.inviteIntoGroup(i,[Creator])
+			        dika.sendText(msg.to,"Success Join To ["+ h +"] Group")
 			    else:
 			        pass
 		    else:
-		        nadya.sendText(msg.to,"Khusus Nadya")
+		        dika.sendText(msg.to,"Khusus Nadya")
 		except Exception as e:
-		    nadya.sendText(msg.to, str(e))
+		    dika.sendText(msg.to, str(e))
  
 	    elif "Leave group: " in msg.text:
 		ng = msg.text.replace("Leave group: ","")
-		gid = nadya.getGroupIdsJoined()
+		gid = dika.getGroupIdsJoined()
 		if msg.from_ in Creator:
                     for i in gid:
                         h = nadya.getGroup(i).name
 		        if h == ng:
-			    nadya.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
-		            nadya.leaveGroup(i)
-			    nadya.sendText(msg.to,"Success Left ["+ h +"] group")
+			    dika.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
+		            dika.leaveGroup(i)
+			    dika.sendText(msg.to,"Success Left ["+ h +"] group")
 			else:
 			    pass
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
+		    dika.sendText(msg.to,"Khusus Dika")
  
 	    elif "Leave all group" == msg.text:
-		gid = nadya.getGroupIdsJoined()
+		gid = dika.getGroupIdsJoined()
                 if msg.from_ in Creator:
 		    for i in gid:
-			nadya.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
-		        nadya.leaveGroup(i)
+			dika.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
+		        dika.leaveGroup(i)
 		    nadya.sendText(msg.to,"Success Leave All Group")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
+		    dika.sendText(msg.to,"Khusus Dika")
 		   
 
             elif "Pict group: " in msg.text:
                 saya = msg.text.replace('Pict group: ','')
-                gid = nadya.getGroupIdsJoined()
+                gid = dika.getGroupIdsJoined()
                 for i in gid:
-                    h = nadya.getGroup(i).name
-                    gna = nadya.getGroup(i)
+                    h = dika.getGroup(i).name
+                    gna = dika.getGroup(i)
                     if h == saya:
-                        nadya.sendImageWithURL(msg.to,"http://dl.profile.line.naver.jp/"+ gna.pictureStatus)		    
+                        dika.sendImageWithURL(msg.to,"http://dl.profile.line.naver.jp/"+ gna.pictureStatus)		    
 		    
  
             elif msg.text in ["cancelall","Cancelall"]:
                 if msg.toType == 2:
-                    X = nadya.getGroup(msg.to)
+                    X = dika.getGroup(msg.to)
                     if X.invitee is not None:
                         gInviMids = [contact.mid for contact in X.invitee]
-                        nadya.cancelGroupInvitation(msg.to, gInviMids)
+                        dika.cancelGroupInvitation(msg.to, gInviMids)
                     else:
-                        nadya.sendText(msg.to,"Tidak Ada Yang Pending")
+                        dika.sendText(msg.to,"Tidak Ada Yang Pending")
                 else:
-                    nadya.sendText(msg.to,"Tidak Bisa Digunakan Diluar Group")
+                    dika.sendText(msg.to,"Tidak Bisa Digunakan Diluar Group")
  
             elif msg.text in ["Ourl","Url on"]:
                 if msg.toType == 2:
-                    X = nadya.getGroup(msg.to)
+                    X = dika.getGroup(msg.to)
                     X.preventJoinByTicket = False
-                    nadya.updateGroup(X)
-                    nadya.sendText(msg.to,"Url Sudah Aktif")
+                    dika.updateGroup(X)
+                    dika.sendText(msg.to,"Url Sudah Aktif")
                 else:
-                    nadya.sendText(msg.to,"Can not be used outside the group")
+                    dika.sendText(msg.to,"Can not be used outside the group")
  
             elif msg.text in ["Curl","Url off"]:
                 if msg.toType == 2:
-                    X = nadya.getGroup(msg.to)
+                    X = dika.getGroup(msg.to)
                     X.preventJoinByTicket = True
-                    nadya.updateGroup(X)
-                    nadya.sendText(msg.to,"Url Sudah Di Nonaktifkan")
+                    dika.updateGroup(X)
+                    dika.sendText(msg.to,"Url Sudah Di Nonaktifkan")
 
                 else:
-                    nadya.sendText(msg.to,"Can not be used outside the group")
+                    dika.sendText(msg.to,"Can not be used outside the group")
  
             elif msg.text in ["Join on","Autojoin on"]:
 		if msg.from_ in admin:
                     wait["AutoJoin"] = True
                     wait["AutoJoinCancel"] = False
-                    nadya.sendText(msg.to,"Auto Join Sudah Aktif")
+                    dika.sendText(msg.to,"Auto Join Sudah Aktif")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
+		    dika.sendText(msg.to,"Khusus Dika")
 
             elif msg.text in ["Join off","Autojoin off"]:
 		if msg.from_ in admin:
                     wait["AutoJoin"] = False
-                    nadya.sendText(msg.to,"Auto Join Sudah Di Nonaktifkan")
+                    dika.sendText(msg.to,"Auto Join Sudah Di Nonaktifkan")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
+		    dika.sendText(msg.to,"Khusus Dika")
 		    
 		    
             elif msg.text in ["Joincancel on","Autojoincancel on"]:
 		if msg.from_ in admin:
                     wait["AutoJoinCancel"] = True
                     wait["AutoJoin"] = False
-                    nadya.sendText(msg.to,"Auto Join Cancel Sudah Aktif")
+                    dika.sendText(msg.to,"Auto Join Cancel Sudah Aktif")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
+		    dika.sendText(msg.to,"Khusus Dika")
 
             elif msg.text in ["Joincancel off","Autojoincancel off"]:
 		if msg.from_ in admin:
                     wait["AutoJoinCancel"] = False
-                    nadya.sendText(msg.to,"Auto Join Cancel Sudah Di Nonaktifkan")
+                    dika.sendText(msg.to,"Auto Join Cancel Sudah Di Nonaktifkan")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")		    
+		    nadya.sendText(msg.to,"Khusus Dika")		    
 		    
  
             elif msg.text in ["Respon1 on"]:
@@ -1373,16 +1370,16 @@ def bot(op):
                     wait["detectMention2"] = False
                     wait["detectMention3"] = False
                     wait["kickMention"] = False
-                    nadya.sendText(msg.to,"Auto Respon1 Sudah Aktif")
+                    dika.sendText(msg.to,"Auto Respon1 Sudah Aktif")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
+		    nadya.sendText(msg.to,"Khusus Dika")
 
             elif msg.text in ["Respon1 off"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
-                    nadya.sendText(msg.to,"Auto Respon1 Sudah Off")
+                    dika.sendText(msg.to,"Auto Respon1 Sudah Off")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")	
+		    dika.sendText(msg.to,"Khusus Dika")	
 		    
 		    
             elif msg.text in ["Respon2 on"]:
@@ -1391,15 +1388,15 @@ def bot(op):
                     wait["detectMention2"] = True
                     wait["detectMention3"] = False
                     wait["kickMention"] = False
-                    nadya.sendText(msg.to,"Auto Respon2 Sudah Aktif")
+                    dika.sendText(msg.to,"Auto Respon2 Sudah Aktif")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
+		    dika.sendText(msg.to,"Khusus Dika")
             elif msg.text in ["Respon2 off"]:
 		if msg.from_ in admin:
                     wait["detectMention2"] = False
-                    nadya.sendText(msg.to,"Auto Respon2 Sudah Off")
+                    dika.sendText(msg.to,"Auto Respon2 Sudah Off")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")	
+		    dika.sendText(msg.to,"Khusus Dika")	
 		    
 
             elif msg.text in ["Respon3 on"]:
@@ -1408,16 +1405,16 @@ def bot(op):
                     wait["detectMention2"] = False
                     wait["detectMention3"] = True
                     wait["kickMention"] = False
-                    nadya.sendText(msg.to,"Auto Respon3 Sudah Aktif")
+                    dik.sendText(msg.to,"Auto Respon3 Sudah Aktif")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
+		    dika.sendText(msg.to,"Khusus Dika")
 
             elif msg.text in ["Respon3 off"]:
 		if msg.from_ in admin:
                     wait["detectMention3"] = False
-                    nadya.sendText(msg.to,"Auto Respon3 Sudah Off")
+                    dika.sendText(msg.to,"Auto Respon3 Sudah Off")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")	
+		    nadya.sendText(msg.to,"Khusus Dika")	
 		    
  
             elif msg.text in ["Responkick on"]:
@@ -1426,16 +1423,16 @@ def bot(op):
                     wait["detectMention"] = False
                     wait["detectMention2"] = False
                     wait["detectMention3"] = False                    
-                    nadya.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
+                    dika.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
+		    dika.sendText(msg.to,"Khusus Dika")
 
             elif msg.text in ["Responkick off"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = False                    
-                    nadya.sendText(msg.to,"Auto Respon Kick Sudah Off")
+                    dika.sendText(msg.to,"Auto Respon Kick Sudah Off")
 		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")			  
+		    dika.sendText(msg.to,"Khusus Nadya")			  
 		    
  
 	    elif msg.text in ["Autocancel on"]:
